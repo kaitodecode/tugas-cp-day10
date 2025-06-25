@@ -8268,9 +8268,10 @@ button.mfp-close:hover {
 		-webkit-transition: linear 0.06s;
 		transition: linear 0.06s
 	}
-
+	
 	.header .header-menu .nav .nav-item .nav-dropdown .nav-dropdown-item .nav-dropdown-link:hover {
-		background: #0000FF;
+		color: white !important;
+		background: #185CA7;
 		padding: 7px 15px 7px 17px
 	}
 
