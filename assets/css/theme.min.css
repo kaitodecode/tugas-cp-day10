@@ -7831,10 +7831,20 @@ button.mfp-close:hover {
 }
 
 .header .header-menu .nav .nav-item .nav-dropdown-toggle:after {
-	content: '\f107';
-	font-family: "Font Awesome 6 Free";
-	font-weight: 900;
-	font-size: 0.8rem
+    content: "\25BC"; /* Using Unicode triangle down symbol */
+    display: inline-block;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-left: 4px; /* Added spacing between text and icon */
+    vertical-align: middle; /* Better vertical alignment */
+    transition: transform 0.2s ease; /* Smooth rotation animation */
+    visibility: visible; /* Ensure icon is visible */
+}
+
+/* Add rotation effect when dropdown is active */
+.header .header-menu .nav .nav-item .nav-dropdown-toggle.active:after {
+    transform: rotate(180deg);
 }
 
 .header .header-menu .nav .nav-item .nav-dropdown {
@@ -7961,12 +7971,12 @@ button.mfp-close:hover {
 }
 
 .header[class*='header-color']:not(.transparent-dark) .header-toggle span {
-	background: white
+	background: #7C7C7C
 }
 
 .header[class*='header-color']:not(.transparent-dark) .header-toggle span:before,
 .header[class*='header-color']:not(.transparent-dark) .header-toggle span:after {
-	background: white
+	background: #7C7C7C
 }
 
 .header[class*='header-color']:not(.transparent-dark) .header-toggle.toggle-close span {
